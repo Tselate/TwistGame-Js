@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+}
+
+body {
+    font-size: 100px;
+    background-color: antiquewhite;
+}
+
+h1 {
+    text-align: center;
+    text-decoration: underline;
+}
+
+h2{
+    margin: 10px 35px;
+}
+
+.container {
+    background-color: rgb(207, 164, 164);
+    width: 2500px;
+    margin: 100px auto;
+}
+
+.container2 {
+    width: 900px;
+    margin: 100px auto;
+}
+
+button {
+    background-color: rgb(203, 174, 236);
+    font-size: 120px;
+    padding: 50px 75px;
+    border-radius: 85px;
+    margin: 30px 0;
+}
+
+.grid {
+    background-color: antiquewhite;
+    width: 1750px;
+    height: 1600px;
+    border: 5px solid black;
+    margin: 100px auto;
+}
+
+.grid div {
+    width: 30px;
+    height: 30px;
+}
