@@ -27,6 +27,40 @@ h2{
     margin: 100px auto;
 }
 
+.controls {
+    text-align: center;
+    float: right;
+    position: fixed;
+    top: 35%;
+    left: 72%;
+}
+
+.up {
+    font-size: 150px;
+    padding: 30px 50px;
+    margin: 0;
+}
+
+.down {
+    font-size: 150px;
+    padding: 30px 50px;
+    margin: 0;
+}
+
+.right {
+    font-size: 150px;
+    padding: 0px 20px 40px 20px;
+    margin: 0;
+
+}
+
+.left {
+    font-size: 150px;
+    padding: 0px 20px 40px 20px;
+    margin: 0;
+    
+}
+
 button {
     background-color: rgb(203, 174, 236);
     font-size: 120px;
@@ -36,14 +70,25 @@ button {
 }
 
 .grid {
+    display: flex;
+    flex-wrap: wrap;
     background-color: antiquewhite;
-    width: 1750px;
-    height: 1600px;
+    width: 1500px;
+    height: 1500px;
     border: 5px solid black;
     margin: 100px auto;
 }
 
-.grid div {
-    width: 30px;
-    height: 30px;
+.square {
+    width: 142px;
+    height: 142px;
+    border: 1px solid black;
+}
+
+.twister {
+    background-color: rgb(128, 240, 24);
+}
+
+.apple {
+    background-color: rgb(223, 14, 14);
 }
