@@ -34,8 +34,18 @@ createGrid()
 currentTwister.forEach(index => squares[index].classList.add("twister"))
 
 
-//Start game function 
+//Start game function and reset everything back 
 function startGame () {
+    currentTwister.forEach(index => squares[index].classList.remove("twister"))
+    squares[appleIndex].classList.remove("apple")
+    clearInterval(timerID)
+    currentTwister = [2, 1, 0]
+    score = 0
+    scoreDisplay.textContent = score
+    direction = 1
+    intervalTime = 1000
+    generateApples()
+    currentTwister.forEach(index => squares[index].classList.add("twister"))
     timerID =setInterval(move, intervalTime)
 }
 startBtn.addEventListener("click", startGame)
@@ -97,4 +107,16 @@ upBtn.addEventListener("click", function goUp () {
 
 downBtn.addEventListener("click", function goDown () {
     direction = +width
+})
+
+//Make the game harder 
+hardBtn.addEventListener ("click", function makeHard () {
+    startGame()
+    clearInterval(timerID)
+    intervalTime = intervalTime * 0.3
+    timerID = setInterval(move, intervalTime)
+})
+
+easyBtn.addEventListener("click", function makeEasy(){
+    startGame()
 })

@@ -90,5 +90,6 @@ button {
 }
 
 .apple {
-    background-color: rgb(223, 14, 14);
+    background-image: url(apple.png);
+    background-size: cover;
 }
